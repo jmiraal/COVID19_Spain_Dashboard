@@ -169,7 +169,7 @@ def return_figures():
             x = x_val,
             y = y_val,
             type = 'bar',
-            name = region
+            #name = region,
             )
         )
 
