@@ -165,11 +165,10 @@ def return_figures():
         x_val = df_region.date.tolist()
         y_val = df_region.total_deaths.diff(periods=1).tolist()
         graph.append(
-            go.Scatter(
+            go.Bar(
             x = x_val,
             y = y_val,
-            type = 'bar',
-            #name = region,
+            name = region,
             )
         )
 
