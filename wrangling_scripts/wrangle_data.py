@@ -8,42 +8,58 @@ from datetime import datetime
 
 def cleandata():
     # get new cases
-    df_new_cases = pd.read_csv('data/ccaa_covid19_casos_long.csv') 
+    df_new_cases = pd.read_csv('https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_casos_long.csv')
+    df_new_cases = df_new_cases.rename(columns={'fecha': 'date'})
 
-    # get new deads
-    df_new_deaths = pd.read_csv('data/ccaa_covid19_fallecidos_long.csv') 
+    # get new deaths data
+    df_new_deaths = pd.read_csv('https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_fallecidos_long.csv')
+    df_new_deaths = df_new_deaths.rename(columns={'fecha': 'date'})
 
-    # get new icus
-    df_new_uci = pd.read_csv('data/ccaa_covid19_uci_long.csv')
+    # get new ucis data
+    df_new_uci = pd.read_csv('https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_uci_long.csv')
+    df_new_uci = df_new_uci.rename(columns={'fecha': 'date'})
 
-    # get new hospitalized cases
-    df_new_hospital = pd.read_csv('data/ccaa_covid19_hospitalizados_long.csv')
+    # get new hospital data
+    df_new_hospital = pd.read_csv('https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_hospitalizados_long.csv')
+    df_new_hospital = df_new_hospital.rename(columns={'fecha': 'date'})
 
-    # get new healed cases
-    df_new_healed = pd.read_csv('data/ccaa_covid19_altas_long.csv')
+    # get new healed data
+    df_new_healed = pd.read_csv('https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_altas_long.csv')
+    df_new_healed = df_new_healed.rename(columns={'fecha': 'date'})
+
+    # get icu in 2017 data
+    df_new_icu_beds_2017 = pd.read_csv('https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_camas_uci_2017.csv')
+    df_new_icu_beds_2017 = df_new_icu_beds_2017.rename(columns={'fecha': 'date'})
+
     
-    # get beds in icus
-    df_new_icu_beds_2017 = pd.read_csv('data/ccaa_camas_uci_2017.csv')
-
-
     # corrections in the type of dates
     df_new_cases.date = df_new_cases.date.apply(lambda x :  pd.to_datetime(x, format='%Y/%m/%d').date())
-    df_new_cases = df_new_cases.rename(columns={'total':'total_cases'})
     df_new_deaths.date = df_new_deaths.date.apply(lambda x :  pd.to_datetime(x, format='%Y/%m/%d').date())
-    df_new_deaths = df_new_deaths.rename(columns={'total':'total_deaths'})
     df_new_uci.date = df_new_uci.date.apply(lambda x :  pd.to_datetime(x, format='%Y/%m/%d').date())
-    df_new_uci = df_new_uci.rename(columns={'total':'total_ucis'})
     df_new_hospital.date = df_new_hospital.date.apply(lambda x :  pd.to_datetime(x, format='%Y/%m/%d').date())
-    df_new_hospital = df_new_hospital.rename(columns={'total':'total_hospital'})
     df_new_healed.date = df_new_healed.date.apply(lambda x :  pd.to_datetime(x, format='%Y/%m/%d').date())
+
+    # rename the column total to make a merge
+    df_new_cases = df_new_cases.rename(columns={'total':'total_cases'})
+    df_new_deaths = df_new_deaths.rename(columns={'total':'total_deaths'})
+    df_new_uci = df_new_uci.rename(columns={'total':'total_ucis'})
+    df_new_hospital = df_new_hospital.rename(columns={'total':'total_hospital'})
     df_new_healed = df_new_healed.rename(columns={'total':'total_healed'})
     df_new_icu_beds_2017 = df_new_icu_beds_2017.rename(columns={'Total':'total_icu_beds'})
 
+    # add a row with the total icu beds in df_new_icu_beds_2017 for all the regions
+    df_new_icu_beds_2017 = df_new_icu_beds_2017.drop(columns= 'CCAA')
+    aux = df_new_icu_beds_2017.sum(axis=0)
+    aux.cod_ine = 0
+    df_new_icu_beds_2017 = df_new_icu_beds_2017.append(aux, ignore_index=True)
+
+    # merge all the datasets
     dataset = pd.merge(df_new_cases, df_new_deaths, how='left', on=['CCAA', 'cod_ine','date'])
     dataset = pd.merge(dataset, df_new_uci, how='left', on=['CCAA', 'cod_ine','date'])
     dataset = pd.merge(dataset, df_new_hospital, how='left', on=['CCAA', 'cod_ine','date'])
     dataset = pd.merge(dataset, df_new_healed, how='left', on=['CCAA', 'cod_ine','date'])
-    dataset = pd.merge(dataset, df_new_icu_beds_2017, how='left', on=['CCAA', 'cod_ine'])
+    dataset = pd.merge(dataset, df_new_icu_beds_2017, how='left', on=['cod_ine'])
+    dataset = dataset.sort_values(by=['cod_ine', 'date'])
     
     return dataset
 
