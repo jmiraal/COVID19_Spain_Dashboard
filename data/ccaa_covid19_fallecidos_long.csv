@@ -22,6 +22,9 @@ Total,0,2020-03-22,1720
 Total,0,2020-03-23,2182
 Total,0,2020-03-24,2696
 Total,0,2020-03-25,3434
+Total,0,2020-03-26,4089
+Total,0,2020-03-27,4858
+Total,0,2020-03-28,5690
 Andalucía,1,2020-03-03,0
 Andalucía,1,2020-03-04,0
 Andalucía,1,2020-03-05,0
@@ -45,6 +48,9 @@ Andalucía,1,2020-03-22,47
 Andalucía,1,2020-03-23,58
 Andalucía,1,2020-03-24,87
 Andalucía,1,2020-03-25,113
+Andalucía,1,2020-03-26,134
+Andalucía,1,2020-03-27,144
+Andalucía,1,2020-03-28,175
 Aragón,2,2020-03-03,0
 Aragón,2,2020-03-04,0
 Aragón,2,2020-03-05,0
@@ -68,6 +74,9 @@ Aragón,2,2020-03-22,24
 Aragón,2,2020-03-23,32
 Aragón,2,2020-03-24,37
 Aragón,2,2020-03-25,40
+Aragón,2,2020-03-26,48
+Aragón,2,2020-03-27,58
+Aragón,2,2020-03-28,58
 Asturias,3,2020-03-03,0
 Asturias,3,2020-03-04,0
 Asturias,3,2020-03-05,0
@@ -91,6 +100,9 @@ Asturias,3,2020-03-22,8
 Asturias,3,2020-03-23,12
 Asturias,3,2020-03-24,22
 Asturias,3,2020-03-25,25
+Asturias,3,2020-03-26,27
+Asturias,3,2020-03-27,29
+Asturias,3,2020-03-28,33
 Baleares,4,2020-03-03,0
 Baleares,4,2020-03-04,0
 Baleares,4,2020-03-05,0
@@ -114,6 +126,9 @@ Baleares,4,2020-03-22,4
 Baleares,4,2020-03-23,10
 Baleares,4,2020-03-24,10
 Baleares,4,2020-03-25,13
+Baleares,4,2020-03-26,17
+Baleares,4,2020-03-27,22
+Baleares,4,2020-03-28,26
 Canarias,5,2020-03-03,0
 Canarias,5,2020-03-04,0
 Canarias,5,2020-03-05,0
@@ -137,6 +152,9 @@ Canarias,5,2020-03-22,9
 Canarias,5,2020-03-23,11
 Canarias,5,2020-03-24,16
 Canarias,5,2020-03-25,21
+Canarias,5,2020-03-26,24
+Canarias,5,2020-03-27,27
+Canarias,5,2020-03-28,36
 Cantabria,6,2020-03-03,0
 Cantabria,6,2020-03-04,0
 Cantabria,6,2020-03-05,0
@@ -160,6 +178,9 @@ Cantabria,6,2020-03-22,5
 Cantabria,6,2020-03-23,6
 Cantabria,6,2020-03-24,9
 Cantabria,6,2020-03-25,14
+Cantabria,6,2020-03-26,17
+Cantabria,6,2020-03-27,21
+Cantabria,6,2020-03-28,22
 Castilla y León,7,2020-03-03,0
 Castilla y León,7,2020-03-04,0
 Castilla y León,7,2020-03-05,0
@@ -183,6 +204,9 @@ Castilla y León,7,2020-03-22,74
 Castilla y León,7,2020-03-23,102
 Castilla y León,7,2020-03-24,124
 Castilla y León,7,2020-03-25,165
+Castilla y León,7,2020-03-26,206
+Castilla y León,7,2020-03-27,252
+Castilla y León,7,2020-03-28,321
 Castilla-La Mancha,8,2020-03-03,0
 Castilla-La Mancha,8,2020-03-04,0
 Castilla-La Mancha,8,2020-03-05,0
@@ -206,6 +230,9 @@ Castilla-La Mancha,8,2020-03-22,112
 Castilla-La Mancha,8,2020-03-23,145
 Castilla-La Mancha,8,2020-03-24,216
 Castilla-La Mancha,8,2020-03-25,263
+Castilla-La Mancha,8,2020-03-26,316
+Castilla-La Mancha,8,2020-03-27,367
+Castilla-La Mancha,8,2020-03-28,448
 Cataluña,9,2020-03-03,0
 Cataluña,9,2020-03-04,0
 Cataluña,9,2020-03-05,0
@@ -229,6 +256,9 @@ Cataluña,9,2020-03-22,191
 Cataluña,9,2020-03-23,245
 Cataluña,9,2020-03-24,282
 Cataluña,9,2020-03-25,516
+Cataluña,9,2020-03-26,672
+Cataluña,9,2020-03-27,880
+Cataluña,9,2020-03-28,1070
 C. Valenciana,10,2020-03-03,0
 C. Valenciana,10,2020-03-04,1
 C. Valenciana,10,2020-03-05,1
@@ -252,6 +282,9 @@ C. Valenciana,10,2020-03-22,69
 C. Valenciana,10,2020-03-23,94
 C. Valenciana,10,2020-03-24,115
 C. Valenciana,10,2020-03-25,143
+C. Valenciana,10,2020-03-26,167
+C. Valenciana,10,2020-03-27,198
+C. Valenciana,10,2020-03-28,234
 Extremadura,11,2020-03-03,0
 Extremadura,11,2020-03-04,0
 Extremadura,11,2020-03-05,0
@@ -275,6 +308,9 @@ Extremadura,11,2020-03-22,14
 Extremadura,11,2020-03-23,18
 Extremadura,11,2020-03-24,26
 Extremadura,11,2020-03-25,39
+Extremadura,11,2020-03-26,58
+Extremadura,11,2020-03-27,69
+Extremadura,11,2020-03-28,88
 Galicia,12,2020-03-03,0
 Galicia,12,2020-03-04,0
 Galicia,12,2020-03-05,0
@@ -298,6 +334,9 @@ Galicia,12,2020-03-22,12
 Galicia,12,2020-03-23,18
 Galicia,12,2020-03-24,20
 Galicia,12,2020-03-25,27
+Galicia,12,2020-03-26,32
+Galicia,12,2020-03-27,43
+Galicia,12,2020-03-28,47
 Madrid,13,2020-03-03,0
 Madrid,13,2020-03-04,0
 Madrid,13,2020-03-05,1
@@ -321,6 +360,9 @@ Madrid,13,2020-03-22,1021
 Madrid,13,2020-03-23,1263
 Madrid,13,2020-03-24,1535
 Madrid,13,2020-03-25,1825
+Madrid,13,2020-03-26,2090
+Madrid,13,2020-03-27,2412
+Madrid,13,2020-03-28,2757
 Murcia,14,2020-03-03,0
 Murcia,14,2020-03-04,0
 Murcia,14,2020-03-05,0
@@ -344,6 +386,9 @@ Murcia,14,2020-03-22,1
 Murcia,14,2020-03-23,2
 Murcia,14,2020-03-24,3
 Murcia,14,2020-03-25,5
+Murcia,14,2020-03-26,8
+Murcia,14,2020-03-27,15
+Murcia,14,2020-03-28,17
 Navarra,15,2020-03-03,0
 Navarra,15,2020-03-04,0
 Navarra,15,2020-03-05,0
@@ -367,6 +412,9 @@ Navarra,15,2020-03-22,14
 Navarra,15,2020-03-23,24
 Navarra,15,2020-03-24,31
 Navarra,15,2020-03-25,33
+Navarra,15,2020-03-26,49
+Navarra,15,2020-03-27,58
+Navarra,15,2020-03-28,70
 País Vasco,16,2020-03-03,0
 País Vasco,16,2020-03-04,0
 País Vasco,16,2020-03-05,1
@@ -390,6 +438,9 @@ País Vasco,16,2020-03-22,97
 País Vasco,16,2020-03-23,120
 País Vasco,16,2020-03-24,133
 País Vasco,16,2020-03-25,155
+País Vasco,16,2020-03-26,180
+País Vasco,16,2020-03-27,207
+País Vasco,16,2020-03-28,221
 La Rioja,17,2020-03-03,0
 La Rioja,17,2020-03-04,0
 La Rioja,17,2020-03-05,0
@@ -413,6 +464,9 @@ La Rioja,17,2020-03-22,18
 La Rioja,17,2020-03-23,22
 La Rioja,17,2020-03-24,30
 La Rioja,17,2020-03-25,37
+La Rioja,17,2020-03-26,43
+La Rioja,17,2020-03-27,55
+La Rioja,17,2020-03-28,65
 Ceuta,18,2020-03-03,0
 Ceuta,18,2020-03-04,0
 Ceuta,18,2020-03-05,0
@@ -436,6 +490,9 @@ Ceuta,18,2020-03-22,0
 Ceuta,18,2020-03-23,0
 Ceuta,18,2020-03-24,0
 Ceuta,18,2020-03-25,0
+Ceuta,18,2020-03-26,0
+Ceuta,18,2020-03-27,0
+Ceuta,18,2020-03-28,1
 Melilla,19,2020-03-03,0
 Melilla,19,2020-03-04,0
 Melilla,19,2020-03-05,0
@@ -459,3 +516,6 @@ Melilla,19,2020-03-22,0
 Melilla,19,2020-03-23,0
 Melilla,19,2020-03-24,0
 Melilla,19,2020-03-25,0
+Melilla,19,2020-03-26,1
+Melilla,19,2020-03-27,1
+Melilla,19,2020-03-28,1
